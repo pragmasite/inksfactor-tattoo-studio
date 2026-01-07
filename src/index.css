@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Tattoo Studio Design System - Rose/Burgundy with Gold Accents */
+
+@layer base {
+  :root {
+    /* Rose/Burgundy theme for tattoo studio */
+    --background: 0 0% 98%;
+    --foreground: 340 30% 20%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 340 30% 20%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 340 30% 20%;
+
+    /* Primary: Deep burgundy/rose */
+    --primary: 340 45% 28%;
+    --primary-foreground: 0 0% 98%;
+
+    /* Secondary: Soft rose */
+    --secondary: 345 60% 75%;
+    --secondary-foreground: 340 30% 20%;
+
+    /* Muted: Light taupe */
+    --muted: 20 20% 90%;
+    --muted-foreground: 340 10% 50%;
+
+    /* Accent: Gold */
+    --accent: 43 78% 55%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 340 20% 88%;
+    --input: 340 20% 88%;
+    --ring: 340 45% 28%;
+
+    --radius: 0.75rem;
+
+    --shadow-soft: 0 4px 20px -4px hsl(340 45% 28% / 0.1);
+    --shadow-medium: 0 8px 30px -6px hsl(340 45% 28% / 0.15);
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 340 30% 20%;
+    --sidebar-primary: 340 45% 28%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 43 78% 55%;
+    --sidebar-accent-foreground: 340 30% 20%;
+    --sidebar-border: 340 20% 88%;
+    --sidebar-ring: 43 78% 55%;
+  }
+
+  .dark {
+    --background: 340 30% 12%;
+    --foreground: 0 0% 95%;
+
+    --card: 340 35% 18%;
+    --card-foreground: 0 0% 95%;
+
+    --popover: 340 35% 18%;
+    --popover-foreground: 0 0% 95%;
+
+    --primary: 43 78% 55%;
+    --primary-foreground: 340 30% 20%;
+
+    --secondary: 340 50% 45%;
+    --secondary-foreground: 0 0% 95%;
+
+    --muted: 340 20% 35%;
+    --muted-foreground: 340 10% 70%;
+
+    --accent: 43 78% 55%;
+    --accent-foreground: 340 30% 20%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 340 20% 25%;
+    --input: 340 20% 25%;
+    --ring: 43 78% 55%;
+
+    --sidebar-background: 340 30% 12%;
+    --sidebar-foreground: 0 0% 95%;
+    --sidebar-primary: 43 78% 55%;
+    --sidebar-primary-foreground: 340 30% 20%;
+    --sidebar-accent: 340 50% 45%;
+    --sidebar-accent-foreground: 0 0% 95%;
+    --sidebar-border: 340 20% 25%;
+    --sidebar-ring: 43 78% 55%;
+  }
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: 'Inter', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
